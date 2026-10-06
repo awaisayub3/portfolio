@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your UI/UX design work effortlessly with a streamlined portfolio page that displays all projects on a single, visually appealing layout.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
