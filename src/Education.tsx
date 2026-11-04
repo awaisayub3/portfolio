@@ -5,10 +5,10 @@ const EDU = [
 ]
 
 const CERTS = [
-  { year: 'Feb 2026', title: 'Using AI in the UX Design Process', org: 'LinkedIn Learning', file: 'using-ai-in-the-ux-design-process.pdf' },
-  { year: 'Feb 2026', title: 'Design Psychology: Master the Art and Science of UX Design', org: 'LinkedIn Learning', file: 'design-psychology.pdf' },
-  { year: 'Feb 2026', title: 'Design Thinking: Implementing the Process', org: 'LinkedIn Learning', file: 'design-thinking-implementing-the-process.pdf' },
-  { year: 'Feb 2026', title: 'Post-Launch Success with Design Thinking', org: 'LinkedIn Learning', file: 'post-launch-success-with-design-thinking.pdf' },
+  { year: 'Feb 2026', title: 'Using AI in the UX Design Process', org: 'LinkedIn Learning', file: '1.pdf' },
+  { year: 'Feb 2026', title: 'Design Psychology: Master the Art and Science of UX Design', org: 'LinkedIn Learning', file: '2.pdf' },
+  { year: 'Feb 2026', title: 'Design Thinking: Implementing the Process', org: 'LinkedIn Learning', file: '3.pdf' },
+  { year: 'Feb 2026', title: 'Post-Launch Success with Design Thinking', org: 'LinkedIn Learning', file: '4.pdf' },
 ]
 
 const TILES = [
@@ -43,7 +43,7 @@ export default function Education() {
                       { label: 'View ↗', extra: { target: '_blank', rel: 'noopener noreferrer' }, aria: `View certificate: ${t.title}` },
                       { label: 'Download ↓', extra: { download: `Muhammad_Awais_Ayub_${t.file}` }, aria: `Download certificate: ${t.title}` },
                     ].map((l) => (
-                      <a key={l.label} href={`/certificates/${t.file}`} aria-label={l.aria} {...l.extra} style={{ fontSize: 13, fontWeight: 500, color: T.lime, textDecoration: 'none', borderBottom: '1px solid currentColor', paddingBottom: 1 }}>
+                      <a key={l.label} href={`/${t.file}`} aria-label={l.aria} {...l.extra} style={{ fontSize: 13, fontWeight: 500, color: T.lime, textDecoration: 'none', borderBottom: '1px solid currentColor', paddingBottom: 1 }}>
                         {l.label}
                       </a>
                     ))}
